@@ -1,11 +1,23 @@
-meme_dict = {
-            "КРИНЖ": "Что-то очень странное или стыдное",
-            "ЛОЛ": "Что-то очень смешное"
-            }
-word = input("Введите непонятное слово (большими буквами!): ")
+import random
+symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+#size = int(input("Сколько символов вы хотите в вашем пороле?"))
 while True:
-    if word in meme_dict.keys():
-        print(meme_dict[word])
-        break
-    else:
-        print("Такого слова не существует или оно ещё не попало в словарь / проверьте написание слова.")
+    size = int(input("Введите число!"))
+    password = ""
+    for i in range(size):
+        password += random.choice(symbols)
+    print(password)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
