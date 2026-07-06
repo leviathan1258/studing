@@ -1,13 +1,13 @@
 import telebot
 from openai import OpenAI
 
-BOT_TOKEN = '7971673745:AAFZN-6mqlkoc8gi69eN6gJlNGWRcyjrdI8'
+BOT_TOKEN = ''
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # DeepSeek через OpenRouter с новым клиентом
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key=""
 )
 
 @bot.message_handler(commands=['start'])
