@@ -4,7 +4,7 @@ import os
 from telebot.types import ReactionTypeEmoji
 from telebot import custom_filters
 
-bot = telebot.TeleBot("7958430002:AAE12foVhWq1WgfKisUR-ZmD73D9bPoWjAI")
+bot = telebot.TeleBot("")
 
 @bot.message_handler(commands=['mem'])
 def send_mem(message):
